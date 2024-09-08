@@ -1,0 +1,30 @@
+version: '3.8'
+services:
+#  app:
+#    build:
+#      context: .
+#      dockerfile: Dockerfile
+#    ports:
+#      - "8080:8080"
+#    depends_on:
+#      - db
+#    environment:
+#      - SPRING_DATASOURCE_URL=jdbc:mysql://db:3306/mydatabase
+#      - SPRING_DATASOURCE_USERNAME=myuser
+#      - SPRING_DATASOURCE_PASSWORD=secret
+#      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+  db:
+    image: mysql:latest
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_PASSWORD: secret
+      MYSQL_ROOT_PASSWORD: verysecret
+      MYSQL_USER: myuser
+      MYSQL_DATABASE: mydatabase
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:
+
