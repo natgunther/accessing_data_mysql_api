@@ -5,13 +5,12 @@ import com.example.accessing_data_mysql.request.PersonRequest;
 import com.example.accessing_data_mysql.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-//Controller exposes ports and endpoints to the whole wide world
+
 import java.util.List;
 import java.util.Optional;
 
-@Controller
+@RestController
 @RequestMapping(path = "/api/v1")
 public class PersonController {
 
