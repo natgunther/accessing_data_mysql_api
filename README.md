@@ -1,13 +1,12 @@
-# Accessing Data with mySQL Database
+# Accessing Data with mySQL Database 
 
 ## How to Run
 ### Requirement
-[Docker](https://www.docker.com/products/docker-desktop/)
+- [Docker](https://www.docker.com/products/docker-desktop/)
+- The frontend uses **React** for the user interface
+
 
 ### Running locally
 ```
 docker compose up
 ```
-
-### Documentation
-See [swagger ui](http://localhost:8080/swagger-ui/index.html) for available endpoints.
